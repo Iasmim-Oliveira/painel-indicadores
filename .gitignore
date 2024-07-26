@@ -1,2 +1,5 @@
+/__pycache__
+/.vscode
+utils/__pycache__
 /venv
 /app.py
