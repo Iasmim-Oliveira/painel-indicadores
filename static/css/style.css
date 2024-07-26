@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar-filtros {
+    background: linear-gradient(90deg, rgba(253, 195, 0, 1) 0%, rgba(220, 88, 28, 1) 35%, rgba(199, 59, 33, 1) 100%);
+    padding: 15px;
+    margin-bottom: 0;
+    height: 80px;
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.form-group {
+    color: #000;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group input[type="date"],
+.form-group select {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-outline-light,
+.btn-outline-warning {
+    margin-top: 32px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #9e9d9d;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+    max-height: 1100px;
+}
+
+.hidden {
+    display: none;
+}
+
+.card p {
+    color: #777;
+}
+
+.logo {
+    width: 130px;
+    height: 60px;
+}
+
+.logo-censipam {
+    width: 180px;
+    height: 60px;
+}
+
+  .titulo {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #fff;
+}
+
+  .col-form-label{
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+}
+
+.cardFilters {
+    background-color: #eeeded !important; 
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    text-align: start;
+}
+
+
+.divider {
+    border: none;
+    height: 8px;
+    background: #e26f2c;
+    margin: 0;
+}
+
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    display: none;
+}
+
+.preloader img{
+    width: 700px;
+    height: auto;
+}
