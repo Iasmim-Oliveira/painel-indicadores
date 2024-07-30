@@ -92,13 +92,12 @@
                         </div>
                         <div class="col-md-2">
                             <label for="area_especial" class="col-form-label">Área Especial:</label>
-                            <select id="area_especial" name="area_especial[]" class="form-select" multiple
-                                onchange="mostrarUnidades()">
+                            <select id="area_especial" name="area_especial" class="form-select" onchange="mostrarUnidades()">
+                                <option value="" disabled selected>Selecione aqui</option>
                                 <option value="is_quilombo">Quilombo</option>
-                                <option value="is_terra_indigena">Terra indígena</option>
-                                <option value="is_terra_privada">Terra privada</option>
-                                <option value="is_assentamento_federal">Assentamento federal</option>
-                                <option value="is_unidade_conservacao">Unid. de conservação</option>
+                                <option value="is_terra_indigena">Terra Indígena</option>
+                                <option value="is_assentamento_federal">Assentamento Federal</option>
+                                <option value="is_unidade_conservacao">Unidades de Conservação</option>
                             </select>
                         </div>
                         <div class="col-md-2" id="unidade-conservacao" style="display:none;">
@@ -108,14 +107,17 @@
                                 <option value="estadual">Estadual</option>
                             </select>
                         </div>
+
                         <div class="col-md-2">
                             <label for="dominio" class="col-form-label">Domínio:</label>
                             <select id="dominio" name="dominio" class="form-select">
                                 <option value="" disabled selected>Selecione aqui</option>
                                 <option value="indefinida">Indefinida</option>
                                 <option value="publica">Pública</option>
+                                <option value="privada">Privada</option>
                             </select>
                         </div>
+                        
                         <div class="col-auto form-group">
                             <button type="submit" value="Consultar" class="btn btn-outline-dark btn-sm" id="consultar">Consultar</button>
                         </div>

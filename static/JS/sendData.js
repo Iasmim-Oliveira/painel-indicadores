@@ -58,6 +58,7 @@ $(document).ready(function() {
         const municipio = $('select[name="municipio"]').val();
         const bioma = $('#bioma').val();
         const tipoUnidade = $('#tipo_unidade').val();
+        const dominio = $('#dominio').val();
 
         const filtros = {
             data_inicio: dataInicio,
@@ -68,6 +69,7 @@ $(document).ready(function() {
             municipio: municipio,
             bioma: bioma,
             tipoUnidade: tipoUnidade,
+            dominio: dominio,
         };
 
         $.ajax({
